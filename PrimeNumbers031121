@@ -1,0 +1,16 @@
+int control=0;
+for (int i = 500; i < 600; i++)
+{
+    control = 0;
+    for (int k = 2; k < i; k++)
+    {
+        if (i%k==0)
+        {
+            control = control + 1;
+        }
+    }
+    if (control==0)
+    {
+        Console.WriteLine(i);
+    }
+}
